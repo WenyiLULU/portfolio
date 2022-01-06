@@ -18,7 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <main className="w-screen h-96 bg-slate-800">
+      <main className="w-screen h-96 bg-primary">
 
       </main>
     </div>

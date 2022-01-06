@@ -73,7 +73,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ## Commands
-`yarn create react-app .`
+```shell
+# Create a React app
+yarn create react-app .
+
+# Install Tailwind and depedencies
+yarn add -D  tailwindcss postcss autoprefixer
+# Init Tailwind
+yarn tailwindcss init -p  
+
+# Add DaisyUI
+yarn add daisyui
+```
 
 
 ### Tailwind & DaisyUI
