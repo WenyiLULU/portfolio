@@ -8,7 +8,7 @@ export default function Header() {
             </div>
             <div className="grow px-2 mx-2 navbar-center flex">
                 <div className="flex space-x-4 items-stretch">
-                    <a className="btn btn-ghost btn-sm rounded-btn">
+                    <a href="#" className="btn btn-ghost btn-sm rounded-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                              className="inline-block w-5 mr-2 stroke-current">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -16,7 +16,7 @@ export default function Header() {
                         </svg>
                         Likes
                     </a>
-                    <a className="btn btn-ghost btn-sm rounded-btn">
+                    <a href="#" className="btn btn-ghost btn-sm rounded-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                              className="inline-block w-5 mr-2 stroke-current">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -24,7 +24,7 @@ export default function Header() {
                         </svg>
                         Notifications
                     </a>
-                    <a className="btn btn-ghost btn-sm rounded-btn">
+                    <a href="#" className="btn btn-ghost btn-sm rounded-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                              className="inline-block w-5 mr-2 stroke-current">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -32,7 +32,7 @@ export default function Header() {
                         </svg>
                         Files
                     </a>
-                    <a className="btn btn-ghost btn-sm rounded-btn">
+                    <a href="#" className="btn btn-ghost btn-sm rounded-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                              className="inline-block w-5 mr-2 stroke-current">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
