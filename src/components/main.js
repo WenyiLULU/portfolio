@@ -5,6 +5,7 @@ export default function Main(props) {
         <section id="me" className="flex me-wallpaper min-h-screen md:p-20 bg-fixed">
             <div className="self-center hero bg-secondary-focus/75 rounded-tl-3xl rounded-br-3xl">
                 <div className="flex-col hero-content lg:flex-row-reverse">
+                    <img src={me} className="max-w-sm rounded-lg shadow-2xl" alt="me"/>
                     <div>
                         <h1 className="mb-5 text-5xl font-bold">
                             Hello there
