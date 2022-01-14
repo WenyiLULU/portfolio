@@ -13,7 +13,7 @@ export default function Tibistory(props) {
     return (
         <section className="min-h-screen md:p-36 bg-sec-75">
             <h1  className="text-center text-primary-content uppercase text-5xl font-extralight col-span-full">
-                Tibistory - {(props.lang == "fr") ?
+                Tibistory - {(props.lang === "fr") ?
                 (
                     <p>est en français !!</p>
                 ) : (

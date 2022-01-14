@@ -1,5 +1,4 @@
 import me from "../images/me.jpg"
-import {useState} from "react";
 
 export default function Header(props) {
     const contents = {
