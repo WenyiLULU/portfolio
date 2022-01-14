@@ -27,7 +27,7 @@ function App() {
         <div className="relative bg-gradient-to-b from-primary-focus to-secondary min-h-screen flex flex-col font-thin">
             <Header onSelectLanguage={handleLanguage} lang={lang}/>
             <main className="w-full grow">
-                <Main name="Wenyi" />
+                <Main lang={lang} />
 
                 <div className="md:px-8 lg:px-[10%] md:py-4 lg:py-8">
                     <div className="bg-secondary/75 grid grid-cols-1 gap-24">
