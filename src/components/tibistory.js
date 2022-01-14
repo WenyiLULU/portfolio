@@ -1,9 +1,28 @@
 export default function Tibistory(props) {
+    const titre = {
+        "en" : "oh yeah !!",
+        "fr" : "oh la la !",
+        "cn" : "dui dui dui",
+        "date" : {
+            "en" : "2016",
+            "fr" : "2015",
+            "cn" : "2014年",
+        }
+    }
+
     return (
         <section className="min-h-screen md:p-36 bg-sec-75">
             <h1  className="text-center text-primary-content uppercase text-5xl font-extralight col-span-full">
-                Tibistory
+                Tibistory - {(props.lang == "fr") ?
+                (
+                    <p>est en français !!</p>
+                ) : (
+                    <p>est dans une autre langue : {props.lang}</p>
+                )}
             </h1>
+
+            <h1>{titre[props.lang]}</h1>
+            <p>{titre.date[props.lang]}</p>
 
 
 
