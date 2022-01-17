@@ -118,7 +118,7 @@ export default function Header(props) {
                     <div tabIndex="0" className="btn rounded-full w-12 h-12 m-1 px-0 bg-primary border-secondary">
                         <img className="h-full w-full" src={me} alt="me"/>
                     </div>
-                    <div tabIndex="0" className="shadow menu dropdown-content rounded-box w-50">
+                    <div tabIndex="0" className="shadow menu dropdown-content rounded-box w-[160px]">
                         <div className="artboard artboard-demo">
                             <ul className="menu shadow-lg bg-white rounded-box">
                                 <li className="hover-bordered">

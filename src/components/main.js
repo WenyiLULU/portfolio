@@ -27,7 +27,7 @@ export default function Main(props) {
 
     return (
         <section id="me" className="flex me-wallpaper min-h-screen md:p-20 bg-fixed">
-            <div className="self-center bg-secondary/75 rounded-3xl p-12">
+            <div className="self-center bg-secondary/75 rounded-3xl my-40 mx-3 p-12">
                 <div className="flex-col hero-content lg:flex-row-reverse">
                     <div className="max-w-sm pl-4">
                         <img src={me} className="rounded-lg shadow-2xl" alt="me"/>
