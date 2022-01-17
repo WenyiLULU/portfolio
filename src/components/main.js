@@ -26,7 +26,7 @@ export default function Main(props) {
     }
 
     return (
-        <section id="me" className="flex me-wallpaper min-h-screen md:p-20 bg-fixed">
+        <section id="me" className="flex justify-center me-wallpaper min-h-screen md:p-20 bg-fixed">
             <div className="self-center bg-secondary/75 rounded-3xl my-40 mx-3 p-12">
                 <div className="flex-col hero-content lg:flex-row-reverse">
                     <div className="max-w-sm pl-4">
@@ -36,13 +36,13 @@ export default function Main(props) {
                         <h1 className="mb-5 text-4xl font-bold">
                             {contents.hello[props.lang]}
                         </h1>
-                        <h1 className="first-letter:pl-8 mb-2 pr-8 text-2xl font-extralight text-justify col-span-full">
+                        <h1 className="first-letter:pl-8 mb-2 pr-8 text-xl font-extralight text-justify col-span-full">
                             {contents.p1[props.lang]}
                         </h1>
-                        <p className="first-letter:pl-8 pr-8 text-xl text-justify mb-2">
+                        <p className="first-letter:pl-8 pr-8 text-m text-justify mb-2">
                             {contents.p2[props.lang]}
                         </p>
-                        <p className="first-letter:pl-8 pr-8 text-xl text-justify mb-2">
+                        <p className="first-letter:pl-8 pr-8 text-m text-justify mb-2">
                             {contents.p3[props.lang]}
                         </p>
                     </div>

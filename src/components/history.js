@@ -4,6 +4,7 @@ import logo_cau from "../images/logo_cau.png"
 import logo_reims from "../images/logo_reims.png"
 import logo_richemont from "../images/logo_richemont.jpg"
 import logo_magister from  "../images/logo-magister.png"
+import logo_remy from "../images/Remy-Martin-logo.png"
 
 export default function History(props) {
     const contents = {
@@ -36,8 +37,69 @@ export default function History(props) {
             },
             "magister_detail" : {
                 "fr" : "Contrôle maladie, conseil viticole, audit certificat VDC & HVE",
-                "en" : "Apr.2019 - Sep.2021",
+                "en" : "Disease control, viticultural advice, VDC & HVE certificate audit",
                 "cn" : "病虫害管理、 栽培技术指导、 VDC和HVE认证审计与指导",
+            },
+            "remy" : "Rémy-Martin",
+            "remy_date" : {
+                "fr" : "Mai - Déc. 2017",
+                "en" : "May - Dec. 2017",
+                "cn" : "2017. 05 - 12",
+            },
+            "remy_city" : {
+                "fr" : "Cognac (France)",
+                "en" : "Cognac (France)",
+                "cn" : "干邑（法国）",
+            },
+            "remy_title" : {
+                "fr" : "Stage de fin d'études en R & D",
+                "en" : "End-of-studies internship in R & D",
+                "cn" : "研发领域毕业实习",
+            },
+            "remy_detail" : {
+                "fr" : "Système auto pilote d’intrant produit phytosanitaire. Manipulation des essais optimisation de la qualité du vin destiné à l’eau-de- vie.",
+                "en" : "Autopilot system of phytosanitary product input. Handling of tests to optimize the quality of the wine destined for the brandy.",
+                "cn" : "植物检疫产品输入的自我试点系统。处理测试以优化白兰地酒的质量。",
+            },
+            "cau" : {
+                "fr" : "Université D’Agriculture de Chine",
+                "en" : "China Agriculture University",
+                "cn" : "中国农业大学",
+            },
+            "cau_date" : {
+                "fr" : "Déc. 2013 - Mai 2014",
+                "en" : "Dec. 2013 - May 2014",
+                "cn" : "2013. 12 - 2014. 05",
+            },
+            "cau_city" : {
+                "fr" : "Pékin (Chine)",
+                "en" : "Beijing (China)",
+                "cn" : "北京（中国）",
+            },
+            "cau_title" : {
+                "fr" : "Stage de fin d'études en Recherche",
+                "en" : "End-of-studies internship in Research",
+                "cn" : "科研领域毕业实习",
+            },
+            "cau_detail" : {
+                "fr" : "Projet de recherche de fin d’études sur la connaissance génétique de la Plasmopara viticola.",
+                "en" : "Final year research project on the genetic knowledge of Plasmopara viticola.",
+                "cn" : "霜霉病抗性基因实验",
+            },
+            "occi" : {
+                "fr": "Oct. – Déc. 2018 : SCA Les Vignerons de l’Occitane",
+                "en": "Oct. – Dec. 2018 : SCA Les Vignerons de l’Occitane",
+                "cn": "2018. 10 - 12 : SCA Les Vignerons de l’Occitane （奥克地区酒农合作社）",
+            },
+            "cloche" : {
+                "fr": "Août – Sept. 2016 : Cave Coopérative Clochers et Terroirs",
+                "en": "Aug. – Sept. 2016 : Cooperative Cellar Clochers et Terroirs",
+                "cn": "2016. 08 - 09 : Clochers et Terroirs （埃罗河谷地区酿酒合作社）",
+            },
+            "other_title" : {
+                "fr": "Assistante Œnologue",
+                "en": "Oenologist Assistant",
+                "cn": "酿酒助理",
             },
         },
         "etu" : {
@@ -88,11 +150,6 @@ export default function History(props) {
                 "en": "Study of food industry knowledge, study of viticulture and oenology.",
                 "cn": "主修食品科学技术以及葡萄栽培与酿造相关学科",
             },
-            "others" :{
-                "fr": "Autres",
-                "en": "Others",
-                "cn": "其他",
-            },
             "reims" : {
                 "fr": "Université de Reims Champagne-Ardenne",
                 "en": "Reims Champagne-Ardenne University",
@@ -114,13 +171,18 @@ export default function History(props) {
                 "cn": "2018 : 葡萄苗木生产技术及苗木公司管理",
             },
         },
+        "others" :{
+            "fr": "Autres",
+            "en": "Others",
+            "cn": "其他",
+        },
     }
 
 
     return (
         <section id="history" className="min-h-screen rounded-3xl my-8 mx-3 md:p-20 bg-secondary/75">
-            <div className="grid justify-items-stretch mb-20 pr-[20%]">
-                <h1  className="justify-self-end text-center text-primary-content uppercase text-5xl font-extralight col-span-full mt-12">
+            <div className="grid justify-items-stretch mb-20">
+                <h1  className="justify-self-center text-center text-primary-focus uppercase text-5xl font-extralight col-span-full mt-12">
                     {contents.pro.history[props.lang]}
                 </h1>
             </div>
@@ -139,47 +201,65 @@ export default function History(props) {
                     <p>{contents.pro.magister_city[props.lang]}</p>
                 </header>
                 <div className="flex flex-col justify-items-center mx-6">
-                    <span className="flex-none w-2 h-2  bg-primary-focus rounded-3xl m-3" />
+                    <span className="flex-none w-2.5 h-2.5  bg-primary-focus rounded-3xl m-3" />
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
                 </div>
                 <main className="grow mb-6 pb-6">
                     <h3>{contents.pro.magister_title[props.lang]}</h3>
                     <p>{contents.pro.magister_detail[props.lang]}</p>
-                    <a href="https://www.reseau-magister.fr/">
-                        <img className="h-8 ml-4 mt-4 border-secondary bg-black" src={logo_magister} alt="SupAgro" />
+                    <a className="w-10" href="https://www.reseau-magister.fr/" target="_blank" rel="noopener noreferrer">
+                        <img className="h-8 mt-4 border-secondary bg-black" src={logo_magister} alt="SupAgro" />
                     </a>
                 </main>
             </article>
             <article className="flex">
                 <header className="flex-none w-36 lg:w-52 text-right">
-                    <h2>{contents.pro.magister}</h2>
-                    <p>{contents.pro.magister_date[props.lang]}</p>
+                    <h2>{contents.pro.remy}</h2>
+                    <p>{contents.pro.remy_date[props.lang]}</p>
+                    <p>{contents.pro.remy_city[props.lang]}</p>
                 </header>
                 <div className="flex flex-col justify-items-center mx-6">
-                    <span className="flex-none w-2 h-2  bg-primary-focus rounded-3xl m-3" />
+                    <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
                 </div>
                 <main className="grow mb-6 pb-6">
-                    <h3>Course - Gamification (course)</h3>
-                    <p>Gamification is the application of game elements and digital game design techniques to non-game problems, such as business and social impact challenges. This course thought me about the mechanisms of gamification, why it has such tremendous potential, and how to use it effectively. </p>
-                    <a href="utc.fr">UTC</a>
+                    <h3>{contents.pro.remy_title[props.lang]}</h3>
+                    <p>{contents.pro.remy_detail[props.lang]}</p>
+                    <a href="https://www.remymartin.com/" target="_blank" rel="noopener noreferrer">
+                        <img className="h-9 mt-4 bg-white" src={logo_remy} alt="SupAgro" />
+                    </a>
                 </main>
             </article>
             <article className="flex">
                 <header className="flex-none w-36 lg:w-52 text-right">
-                    <h2>{contents.pro.magister}</h2>
-                    <p>{contents.pro.magister_date[props.lang]}</p>
+                    <h2>{contents.pro.cau[props.lang]}</h2>
+                    <p>{contents.pro.cau_date[props.lang]}</p>
+                    <p>{contents.pro.cau_city[props.lang]}</p>
                 </header>
                 <div className="flex flex-col justify-items-center mx-6">
-                    <span className="flex-none w-2 h-2  bg-primary-focus rounded-3xl m-3" />
+                    <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
                 </div>
                 <main className="grow mb-6 pb-6">
-                    <h3>Course - Gamification (course)</h3>
-                    <p>Gamification is the application of game elements and digital game design techniques to non-game problems, such as business and social impact challenges. This course thought me about the mechanisms of gamification, why it has such tremendous potential, and how to use it effectively. </p>
-                    <a href="https://www.reseau-magister.fr/">
-                        <img className="h-8 ml-4 border-secondary border-2 bg-secondary" src={logo_richemont} alt="SupAgro" />
+                    <h3>{contents.pro.cau_title[props.lang]}</h3>
+                    <p>{contents.pro.cau_detail[props.lang]}</p>
+                    <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
+                        <img className="h-10 mt-4 border-secondary border-2 bg-secondary" src={logo_cau} alt="SupAgro" />
                     </a>
+                </main>
+            </article>
+            <article className="flex text-neutral">
+                <header className="flex-none w-36 lg:w-52 text-right">
+                    <h2>{contents.others[props.lang]}</h2>
+                </header>
+                <div className="flex flex-col justify-items-center mx-6">
+                    <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
+                    <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
+                </div>
+                <main className="grow mb-6 pb-6">
+                    <h3 className="mb-2">{contents.pro.other_title[props.lang]}</h3>
+                    <p>{contents.pro.occi[props.lang]}</p>
+                    <p>{contents.pro.cloche[props.lang]}</p>
                 </main>
             </article>
             <h2 className="flex text-neutral text-3xl border-b-2 m-8">
@@ -200,17 +280,17 @@ export default function History(props) {
                     <p>{contents.etu.supagro_city[props.lang]}</p>
                 </header>
                 <div className="flex flex-col justify-items-center mx-6">
-                    <span className="flex-none w-2 h-2  bg-primary-focus rounded-3xl m-3" />
+                    <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
                 </div>
                 <main className="grow mb-6 pb-6">
                     <h3 className="mb-2">{contents.etu.supagro_degree[props.lang]}</h3>
                     <p>{contents.etu.supagro_content[props.lang]}</p>
                     <div className="flex">
-                        <a href="https://www.institut-agro-montpellier.fr/">
+                        <a href="https://www.institut-agro-montpellier.fr/" target="_blank" rel="noopener noreferrer">
                             <img className="h-8 mt-4 border-secondary border-2" src={logo_supagro} alt="SupAgro" />
                         </a>
-                        <a href="https://www.agro-bordeaux.fr/">
+                        <a href="https://www.agro-bordeaux.fr/" target="_blank" rel="noopener noreferrer">
                             <img className="h-8 m-4" src={logo_scienceagro} alt="Sciences Agro" />
                         </a>
                     </div>
@@ -223,40 +303,36 @@ export default function History(props) {
                     <p>{contents.etu.cau_city[props.lang]}</p>
                 </header>
                 <div className="flex flex-col justify-items-center mx-6">
-                    <span className="flex-none w-2 h-2  bg-primary-focus rounded-3xl m-3" />
+                    <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
                 </div>
                 <main className="grow mb-6 pb-6">
                     <h3 className="mb-2">{contents.etu.supagro_degree[props.lang]}</h3>
                     <p>{contents.etu.cau_content[props.lang]}</p>
-                    <a href="https://www.cau.edu.cn/">
+                    <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
                         <img className="h-10 mt-4 border-secondary border-2 bg-secondary" src={logo_cau} alt="SupAgro" />
                     </a>
                 </main>
             </article>
             <article className="flex text-neutral">
                 <header className="flex-none w-36 lg:w-52 text-right">
-                    <h2>{contents.etu.others[props.lang]}</h2>
+                    <h2>{contents.others[props.lang]}</h2>
                 </header>
                 <div className="flex flex-col justify-items-center mx-6">
-                    <span className="flex-none w-2 h-2  bg-primary-focus rounded-3xl m-3" />
+                    <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
                 </div>
                 <main className="grow mb-6 pb-6">
-                    <div className="flex">
-                        <h3 className="mb-2">{contents.etu.reims[props.lang]}</h3>
-                        <a href="https://www.cau.edu.cn/">
-                            <img className="h-8 ml-4 border-secondary border-2 bg-secondary" src={logo_reims} alt="SupAgro" />
-                        </a>
-                    </div>
+                    <h3 className="mb-2">{contents.etu.reims[props.lang]}</h3>
                     <p>{contents.etu.reims_detail[props.lang]}</p>
-                    <div className="flex mt-4">
-                        <h3 className="mb-2">{contents.etu.nursery[props.lang]}</h3>
-                        <a href="https://www.cau.edu.cn/">
-                            <img className="h-8 ml-4 border-secondary border-2 bg-secondary" src={logo_richemont} alt="SupAgro" />
-                        </a>
-                    </div>
+                    <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
+                        <img className="h-8 mb-8 border-secondary border-2 bg-secondary" src={logo_reims} alt="SupAgro" />
+                    </a>
+                    <h3 className="mb-2">{contents.etu.nursery[props.lang]}</h3>
                     <p>{contents.etu.nursery_detail[props.lang]}</p>
+                    <a href="https://institut-richemont.fr/" target="_blank" rel="noopener noreferrer">
+                        <img className="h-8 border-secondary border-2 bg-secondary" src={logo_richemont} alt="SupAgro" />
+                    </a>
                 </main>
             </article>
 
