@@ -3,6 +3,7 @@ import logo_scienceagro from "../images/logo_scienceagro.jpg"
 import logo_cau from "../images/logo_cau.png"
 import logo_reims from "../images/logo_reims.png"
 import logo_richemont from "../images/logo_richemont.jpg"
+import logo_magister from  "../images/logo-magister.png"
 
 export default function History(props) {
     const contents = {
@@ -19,9 +20,9 @@ export default function History(props) {
             },
             "magister" : "GIE Magister",
             "magister_date" : {
-                "fr" : "Avr.2019 - Sep.2021",
-                "en" : "Apr.2019 - Sep.2021",
-                "cn" : "2019.04 - 2021.09",
+                "fr" : "Avr. 2019 - Sep. 2021",
+                "en" : "Apr. 2019 - Sep. 2021",
+                "cn" : "2019. 04 - 2021. 09",
             },
             "magister_city" : {
                 "fr" : "Epernay (France)",
@@ -36,7 +37,7 @@ export default function History(props) {
             "magister_detail" : {
                 "fr" : "Contrôle maladie, conseil viticole, audit certificat VDC & HVE",
                 "en" : "Apr.2019 - Sep.2021",
-                "cn" : "2019.04 - 2021.09",
+                "cn" : "病虫害管理、 栽培技术指导、 VDC和HVE认证审计与指导",
             },
         },
         "etu" : {
@@ -117,7 +118,7 @@ export default function History(props) {
 
 
     return (
-        <section id="history" className="min-h-screen md:p-20 bg-sec-75">
+        <section id="history" className="min-h-screen rounded-[50px] md:p-20 bg-secondary/75">
             <div className="grid justify-items-stretch mb-20 pr-[20%]">
                 <h1  className="justify-self-end text-center text-primary-content uppercase text-5xl font-extralight col-span-full">
                     {contents.pro.history[props.lang]}
@@ -135,15 +136,18 @@ export default function History(props) {
                 <header className="flex-none w-36 lg:w-52 text-right">
                     <h2>{contents.pro.magister}</h2>
                     <p>{contents.pro.magister_date[props.lang]}</p>
+                    <p>{contents.pro.magister_city[props.lang]}</p>
                 </header>
                 <div className="flex flex-col justify-items-center mx-6">
                     <span className="flex-none w-2 h-2  bg-primary-focus rounded-3xl m-3" />
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
                 </div>
                 <main className="grow mb-6 pb-6">
-                    <h3>Course - Gamification (course)</h3>
-                    <p>Gamification is the application of game elements and digital game design techniques to non-game problems, such as business and social impact challenges. This course thought me about the mechanisms of gamification, why it has such tremendous potential, and how to use it effectively. </p>
-                    <a href="utc.fr">UTC</a>
+                    <h3>{contents.pro.magister_title[props.lang]}</h3>
+                    <p>{contents.pro.magister_detail[props.lang]}</p>
+                    <a href="https://www.reseau-magister.fr/">
+                        <img className="h-8 ml-4 mt-4 border-secondary bg-black" src={logo_magister} alt="SupAgro" />
+                    </a>
                 </main>
             </article>
             <article className="flex">
@@ -173,7 +177,9 @@ export default function History(props) {
                 <main className="grow mb-6 pb-6">
                     <h3>Course - Gamification (course)</h3>
                     <p>Gamification is the application of game elements and digital game design techniques to non-game problems, such as business and social impact challenges. This course thought me about the mechanisms of gamification, why it has such tremendous potential, and how to use it effectively. </p>
-                    <a href="utc.fr">UTC</a>
+                    <a href="https://www.reseau-magister.fr/">
+                        <img className="h-8 ml-4 border-secondary border-2 bg-secondary" src={logo_richemont} alt="SupAgro" />
+                    </a>
                 </main>
             </article>
             <h2 className="flex text-neutral text-3xl border-b-2 m-8">

@@ -29,15 +29,15 @@ function App() {
             <main className="w-full grow">
                 <Main lang={lang} />
 
-                <div className="md:px-8 lg:px-[10%] md:py-4 lg:py-8">
-                    <div className="bg-secondary/75 grid grid-cols-1 gap-24">
-                        <History lang={lang} />
-                        <Hobbies />
-                        <button onClick={() => setLang(changeLanguage)} className="btn btn-accent">Click me</button>
-
-                        <Tibistory lang={lang} />
-                    </div>
+                <div className="md:px-8 lg:px-[10%] md:py-8 lg:py-16">
+                    <History lang={lang} />
                 </div>
+                <div className="md:px-8 lg:px-[10%] md:py-8 lg:py-16">
+                    <Hobbies />
+                </div>
+                    <button onClick={() => setLang(changeLanguage)} className="btn btn-accent">Click me</button>
+
+
             </main>
             <a href="#top" className="btn btn-circle glass btn-sm fixed bottom-8 right-8">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"

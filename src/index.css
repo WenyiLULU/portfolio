@@ -17,7 +17,7 @@ code {
 }
 
 .me-wallpaper {
-  background-image: url("https://picsum.photos/id/314/1000/300");
+  background-image: url("../src/images/bg_vignoble.jpg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
