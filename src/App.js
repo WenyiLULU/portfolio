@@ -3,7 +3,6 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Main from './components/main';
 import History from "./components/history";
-import Tibistory from "./components/tibistory";
 import Hobbies from "./components/hobbies";
 import {useState} from "react";
 
