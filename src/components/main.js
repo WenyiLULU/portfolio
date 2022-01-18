@@ -30,7 +30,7 @@ export default function Main(props) {
             <div className="self-center bg-secondary/75 rounded-3xl my-40 mx-3 p-12">
                 <div className="flex-col hero-content lg:flex-row-reverse">
                     <div className="max-w-sm pl-4">
-                        <img src={me} className="rounded-lg shadow-2xl" alt="me"/>
+                        <img src={me} className="rounded-[20px] shadow-2xl" alt="me"/>
                     </div>
                     <div>
                         <h1 className="mb-5 text-4xl font-bold">

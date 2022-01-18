@@ -180,9 +180,9 @@ export default function History(props) {
 
 
     return (
-        <section id="history" className="min-h-screen rounded-3xl my-8 mx-3 md:p-20 bg-secondary/75">
-            <div className="grid justify-items-stretch mb-20">
-                <h1  className="justify-self-center text-center text-primary-focus uppercase text-5xl font-extralight col-span-full mt-12">
+        <section id="history" className="min-h-screen rounded-3xl my-8 mx-3 px-4 bg-secondary/75">
+            <div className="grid justify-items-stretch mb-16">
+                <h1  className="justify-self-center text-center text-primary-focus uppercase text-5xl font-extralight col-span-full pt-16">
                     {contents.pro.history[props.lang]}
                 </h1>
             </div>
@@ -208,7 +208,7 @@ export default function History(props) {
                     <h3>{contents.pro.magister_title[props.lang]}</h3>
                     <p>{contents.pro.magister_detail[props.lang]}</p>
                     <a className="w-10" href="https://www.reseau-magister.fr/" target="_blank" rel="noopener noreferrer">
-                        <img className="h-8 mt-4 border-secondary bg-black" src={logo_magister} alt="SupAgro" />
+                        <img className="h-8 mt-4 border-secondary bg-black" src={logo_magister} alt="GIE Magister" />
                     </a>
                 </main>
             </article>
@@ -226,7 +226,7 @@ export default function History(props) {
                     <h3>{contents.pro.remy_title[props.lang]}</h3>
                     <p>{contents.pro.remy_detail[props.lang]}</p>
                     <a href="https://www.remymartin.com/" target="_blank" rel="noopener noreferrer">
-                        <img className="h-9 mt-4 bg-white" src={logo_remy} alt="SupAgro" />
+                        <img className="h-9 mt-4 bg-white" src={logo_remy} alt="Rémy-Martin" />
                     </a>
                 </main>
             </article>
@@ -244,7 +244,7 @@ export default function History(props) {
                     <h3>{contents.pro.cau_title[props.lang]}</h3>
                     <p>{contents.pro.cau_detail[props.lang]}</p>
                     <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
-                        <img className="h-10 mt-4 border-secondary border-2 bg-secondary" src={logo_cau} alt="SupAgro" />
+                        <img className="h-10 mt-4 border-secondary border-2 bg-secondary" src={logo_cau} alt="CAU" />
                     </a>
                 </main>
             </article>
@@ -310,7 +310,7 @@ export default function History(props) {
                     <h3 className="mb-2">{contents.etu.supagro_degree[props.lang]}</h3>
                     <p>{contents.etu.cau_content[props.lang]}</p>
                     <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
-                        <img className="h-10 mt-4 border-secondary border-2 bg-secondary" src={logo_cau} alt="SupAgro" />
+                        <img className="h-10 mt-4 border-secondary border-2 bg-secondary" src={logo_cau} alt="CAU" />
                     </a>
                 </main>
             </article>
@@ -320,18 +320,18 @@ export default function History(props) {
                 </header>
                 <div className="flex flex-col justify-items-center mx-6">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
-                    <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
+                    <span className="grow w-0 border-l-2 border-primary border-dashed mx-4 mb-8"/>
                 </div>
                 <main className="grow mb-6 pb-6">
                     <h3 className="mb-2">{contents.etu.reims[props.lang]}</h3>
                     <p>{contents.etu.reims_detail[props.lang]}</p>
                     <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
-                        <img className="h-8 mb-8 border-secondary border-2 bg-secondary" src={logo_reims} alt="SupAgro" />
+                        <img className="h-8 mb-8 border-secondary border-2 bg-secondary" src={logo_reims} alt="Université de Reims" />
                     </a>
                     <h3 className="mb-2">{contents.etu.nursery[props.lang]}</h3>
                     <p>{contents.etu.nursery_detail[props.lang]}</p>
                     <a href="https://institut-richemont.fr/" target="_blank" rel="noopener noreferrer">
-                        <img className="h-8 border-secondary border-2 bg-secondary" src={logo_richemont} alt="SupAgro" />
+                        <img className="h-8 border-secondary border-2 bg-secondary" src={logo_richemont} alt="Institut Richemont" />
                     </a>
                 </main>
             </article>
