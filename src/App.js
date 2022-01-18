@@ -5,20 +5,27 @@ import Main from './components/main';
 import History from "./components/history";
 import Hobbies from "./components/hobbies";
 import {useState} from "react";
+import Skills from "./components/skills";
+import Cookies from 'universal-cookie';
 
-
-const langs = ["en", "fr", "cn"]
-let random = Math.floor(Math.random() * langs.length);
-
-function changeLanguage() {
-    random = random + 1
-    return langs[random % langs.length]
-}
+const LANGS = ["en", "fr", "cn"];
 
 function App() {
-    const [lang, setLang] = useState(changeLanguage())
+    let cookie = new Cookies();
+    let cookieLang = cookie.get('lang');
+
+    let defaultLang = "en";
+    if (cookieLang != null && LANGS.includes(cookieLang)) {
+        defaultLang = cookieLang;
+    }
+
+    const [lang, setLang] = useState(defaultLang);
 
     function handleLanguage (langValue) {
+        cookie.set("lang", langValue, {
+            path: '/', // maxAge: 60 * 60 * 24 * 7,
+            sameSite: 'lax'
+        });
         setLang(langValue);
     }
 
@@ -32,10 +39,11 @@ function App() {
                     <History lang={lang} />
                 </div>
                 <div className="md:px-8 lg:px-[10%] md:py-8 lg:py-16">
+                    <Skills lang={lang} />
+                </div>
+                <div className="md:px-8 lg:px-[10%] md:py-8 lg:py-16">
                     <Hobbies />
                 </div>
-                    <button onClick={() => setLang(changeLanguage)} className="btn btn-accent">Click me</button>
-
 
             </main>
             <a href="#me" className="btn btn-circle glass btn-sm fixed bottom-8 right-8">
