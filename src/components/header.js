@@ -39,7 +39,7 @@ export default function Header(props) {
     }
 
     return (
-        <header id="top" className="navbar fixed w-full shadow-lg bg-primary-focus text-neutral-content rounded-b-box">
+        <header id="top" className="navbar fixed w-full shadow-lg bg-primary-focus text-neutral-content rounded-b-box z-50">
             <div className="navbar-start px-2 mx-2 flex">
                 <span className="text-lg font-bold">
                     {contents.name[props.lang]}
