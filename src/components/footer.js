@@ -7,6 +7,7 @@ export default function Footer() {
         <footer className="p-4 footer bg-neutral text-base-content footer-center">
             <div className="grid grid-cols-3 justify-items-center">
                 <div >
+                    <p className="text-primary">Host by Vercel</p>
                     <p className="text-primary">Made by React with Tailwind and DaisyUI</p>
                 </div>
                 <div >
