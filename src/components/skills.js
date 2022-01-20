@@ -38,7 +38,7 @@ export default function Skills(props) {
         "transport" :{
             "fr": "Permis B + voiture citadine",
             "en": "Driving license + city car",
-            "cn": "",
+            "cn": "Todo",
         },
     }
 
