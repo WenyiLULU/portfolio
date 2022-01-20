@@ -3,7 +3,6 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Main from './components/main';
 import History from "./components/history";
-import Hobbies from "./components/hobbies";
 import {useState} from "react";
 import Skills from "./components/skills";
 import Cookies from 'universal-cookie';
@@ -40,9 +39,6 @@ function App() {
                 </div>
                 <div className="md:px-8 lg:px-[10%] md:py-8 lg:py-16">
                     <Skills lang={lang} />
-                </div>
-                <div className="md:px-8 lg:px-[10%] md:py-8 lg:py-16">
-                    <Hobbies />
                 </div>
 
             </main>
