@@ -71,7 +71,7 @@ export default function Header(props) {
                         </svg>
                         {contents.abilities[props.lang]}
                     </a>
-                    <a href="#me" className="btn btn-ghost btn-sm rounded-btn border-white">
+                    <a href="#me" className="btn btn-ghost btn-sm rounded-btn border-white" disabled="disabled" >
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -81,7 +81,7 @@ export default function Header(props) {
                         </svg>
                         {contents.hobbies[props.lang]}
                     </a>
-                    <a href="#me" className="btn btn-ghost btn-sm rounded-btn border-white">
+                    <a href="mailto:luwenyi1991@gmail.com" className="btn btn-ghost btn-sm rounded-btn border-white">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
