@@ -254,7 +254,7 @@ export default function Skills(props) {
                 <div>
                     <h3 className="text-center text-neutral text-3xl mt-12 mb-8">{contents.transport[props.lang]}</h3>
                     <div className="grid grid-cols-3">
-                        <img className="justify-self-end mr-8" src="https://img.icons8.com/windows/32/000000/sedan.png"/>
+                        <img className="justify-self-end mr-8" src="https://img.icons8.com/windows/32/000000/sedan.png" alt="car"/>
                         <p className="col-span-2 justify-self-center ">{contents.license[props.lang]}</p>
                     </div>
                 </div>
