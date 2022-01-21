@@ -45,7 +45,14 @@ export default function Main(props) {
                         <p className="first-letter:pl-8 pr-8 text-m text-justify mb-2">
                             {contents.p3[props.lang]}
                         </p>
+                        <ul className="flex justify-evenly text-secondary text-2xl mt-12">
+                            <li className="rounded-full bg-primary shadow px-4 py-1">Curieuse</li>
+                            <li className="rounded-full bg-primary shadow px-4 py-1">Créative</li>
+                            <li className="rounded-full bg-primary shadow px-4 py-1">Dynamique</li>
+                            <li className="rounded-full bg-primary shadow px-4 py-1">Polyvalente</li>
+                        </ul>
                     </div>
+
                 </div>
             </div>
         </section>
