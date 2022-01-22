@@ -258,11 +258,7 @@ export default function Skills(props) {
                         <p className="col-span-2 justify-self-center ">{contents.license[props.lang]}</p>
                     </div>
                 </div>
-
-
-
             </div>
-
         </section>
     )
 }

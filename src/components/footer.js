@@ -30,7 +30,7 @@ export default function Footer() {
                 </div>
             </div>
             <div >
-                <p className="text-secondary">Copyright © {YEAR} - All right reserved by Wenyi Lu</p>
+                <p className="text-secondary">Copyright © {YEAR} - All right reserved by Wenyi Lu (luwenyi1991@gmail.com)</p>
             </div>
         </footer>
     )
