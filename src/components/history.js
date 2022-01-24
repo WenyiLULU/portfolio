@@ -33,12 +33,24 @@ export default function History(props) {
             "magister_title" : {
                 "fr" : "Technicienne Conseil Viticol",
                 "en" : "Vineyard advisory technician",
-                "cn" : "葡萄栽培技术顾问",
+                "cn" : "葡萄栽培技术科技员",
             },
             "magister_detail" : {
-                "fr" : "Contrôle maladie, conseil viticole, audit certificat VDC & HVE",
-                "en" : "Disease control, viticultural advice, VDC & HVE certificate audit",
-                "cn" : "病虫害管理、 栽培技术指导、 VDC和HVE认证审计与指导",
+                "p1":{
+                    "fr" : "- Contrôle maladie : Réaliser des observations et des comptages des maladies et des ravageurs dans les vignobles ; évaluer les pressions des maladies selon les résultats des observations et des données météorologiques.",
+                    "en" : "- Disease control: Conduct observations and counts of diseases and pests in the vineyards; assess disease pressures based on observation and weather data.",
+                    "cn" : "- 病虫害管理 : 在葡萄园进行病虫害监控计数；根据监控数据与气象数据评估病虫害风险。",
+                },
+                "p2":{
+                    "fr" : "- Conseil viticole : Rédiger des fiches techniques et organiser des réunions de conseil avec les vignerons. ",
+                    "en" : "- Viticultural advice : Write technical sheets and organize advice meetings with the winemakers. ",
+                    "cn" : "- 栽培技术指导 : 撰写技术指导报告并组织会议向葡萄农提供技术建议。",
+                },
+                "p3":{
+                    "fr" : "- Accompagnement et audit des certificats environnementaux : Réaliser des audits et accompagner les adhérants pour améliorer leurs pratiques viticoles pour atteindre les recommandations du certificat VDC (Viticulture Durable en Champagne) ou ceux du HVE (Haute Valeur Environementale).",
+                    "en" : "- Accompaniment and audit of environmental certificates: To carry out audits and accompany the subscriber to improve their viticultural practices in order to achive the recommendations of the certificate VDC (Viticulture Durable en Champagne) or those of the HVE (Haute Valeur Environementale).",
+                    "cn" : "- 环境友好认证指导与审计 ：对客户的葡萄生产流程进行审计并指导其达到VDC（香槟可持续葡萄栽培认证）或是HVE（高环境价值认证）的认证要求。",
+                },
             },
             "remy" : "Rémy-Martin",
             "remy_date" : {
@@ -57,9 +69,16 @@ export default function History(props) {
                 "cn" : "研发领域毕业实习",
             },
             "remy_detail" : {
-                "fr" : "Système auto pilote d’intrant produit phytosanitaire. Manipulation des essais optimisation de la qualité du vin destiné à l’eau-de- vie.",
-                "en" : "Autopilot system of phytosanitary product input. Handling of tests to optimize the quality of the wine destined for the brandy.",
-                "cn" : "植物检疫产品输入的自我试点系统。处理测试以优化白兰地酒的质量。",
+                "p1" :{
+                    "fr" : "- Essai viticole : Planifier et manipuler une expérimentation pour tester un nouveau système d'auto pilote des intrants phytopharmaceutique viticole.",
+                    "en" : "- Viticultural experiment : Plan and handle an experiment to test a new autopilot system of phytosanitary product input in vineyards.",
+                    "cn" : "- 葡萄栽培实验 ： 设计并操作测试新的葡萄农业用药施用自动调节系统的测试实验。",
+                },
+                "p2" :{
+                    "fr" : "- Essais œnologiques : Manipuler des expérimentation sur des pressurages et des vinifications pour optimiser la qualité du vin destiné à la production de l'eau-de-vie.",
+                    "en" : "- Oenology experiments : Conduct experiments on pressing and fermentation to optimize the quality of wine for the production of brandy.",
+                    "cn" : "- 酿造学实验 ： 实施压榨及发酵实验旨在优化白兰地基酒的品质。",
+                },
             },
             "cau" : {
                 "fr" : "Université D’Agriculture de Chine",
@@ -82,9 +101,16 @@ export default function History(props) {
                 "cn" : "科研领域毕业实习",
             },
             "cau_detail" : {
-                "fr" : "Projet de recherche de fin d’études sur la connaissance génétique de la Plasmopara viticola.",
-                "en" : "Final year research project on the genetic knowledge of Plasmopara viticola.",
-                "cn" : "霜霉病抗性基因实验",
+                "p1" :{
+                    "fr" : "- Projet de recherche de fin d’études sur la connaissance génétique de la résistance Plasmopara viticola.",
+                    "en" : "- Final year research project on the genetic knowledge of Plasmopara viticola.",
+                    "cn" : "- 毕设实验 ： 霜霉病致病菌抗性基因研究",
+                },
+                "p2":{
+                    "fr" : "- Participer à un essai d'hybridation de vigne",
+                    "en" : "- Participate in a vine hybridization trial",
+                    "cn" : "- 参与葡萄杂交实验",
+                },
             },
             "occi" : {
                 "fr": "Oct. – Déc. 2018 : SCA Les Vignerons de l’Occitane",
@@ -180,7 +206,7 @@ export default function History(props) {
 
 
     return (
-        <section id="history" className="min-h-screen rounded-3xl my-8 mx-3 px-4 bg-secondary/75">
+        <section id="history" className="min-h-screen rounded-3xl my-8 mx-3 px-4 text-neutral-focus bg-secondary/75">
             <div className="grid justify-items-stretch mb-16">
                 <h1  className="justify-self-center text-center text-primary-focus uppercase text-5xl font-extralight col-span-full pt-16">
                     {contents.pro.history[props.lang]}
@@ -196,7 +222,7 @@ export default function History(props) {
             </h2>
             <article className="flex">
                 <header className="flex-none w-36 lg:w-52 text-right">
-                    <h2>{contents.pro.magister}</h2>
+                    <h3 className="font-normal">{contents.pro.magister}</h3>
                     <p>{contents.pro.magister_date[props.lang]}</p>
                     <p>{contents.pro.magister_city[props.lang]}</p>
                 </header>
@@ -205,8 +231,10 @@ export default function History(props) {
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
                 </div>
                 <main className="grow mb-6 pb-6">
-                    <h3>{contents.pro.magister_title[props.lang]}</h3>
-                    <p>{contents.pro.magister_detail[props.lang]}</p>
+                    <h3 className="font-normal">{contents.pro.magister_title[props.lang]}</h3>
+                    <p>{contents.pro.magister_detail.p1[props.lang]}</p>
+                    <p>{contents.pro.magister_detail.p2[props.lang]}</p>
+                    <p>{contents.pro.magister_detail.p3[props.lang]}</p>
                     <a className="w-10" href="https://www.reseau-magister.fr/" target="_blank" rel="noopener noreferrer">
                         <img className="h-8 mt-4 border-secondary bg-black" src={logo_magister} alt="GIE Magister" />
                     </a>
@@ -214,7 +242,7 @@ export default function History(props) {
             </article>
             <article className="flex">
                 <header className="flex-none w-36 lg:w-52 text-right">
-                    <h2>{contents.pro.remy}</h2>
+                    <h3 className="font-normal">{contents.pro.remy}</h3>
                     <p>{contents.pro.remy_date[props.lang]}</p>
                     <p>{contents.pro.remy_city[props.lang]}</p>
                 </header>
@@ -223,8 +251,9 @@ export default function History(props) {
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
                 </div>
                 <main className="grow mb-6 pb-6">
-                    <h3>{contents.pro.remy_title[props.lang]}</h3>
-                    <p>{contents.pro.remy_detail[props.lang]}</p>
+                    <h3 className="font-normal">{contents.pro.remy_title[props.lang]}</h3>
+                    <p>{contents.pro.remy_detail.p1[props.lang]}</p>
+                    <p>{contents.pro.remy_detail.p2[props.lang]}</p>
                     <a href="https://www.remymartin.com/" target="_blank" rel="noopener noreferrer">
                         <img className="h-9 mt-4 bg-white" src={logo_remy} alt="Rémy-Martin" />
                     </a>
@@ -232,7 +261,7 @@ export default function History(props) {
             </article>
             <article className="flex">
                 <header className="flex-none w-36 lg:w-52 text-right">
-                    <h2>{contents.pro.cau[props.lang]}</h2>
+                    <h3 className="font-normal">{contents.pro.cau[props.lang]}</h3>
                     <p>{contents.pro.cau_date[props.lang]}</p>
                     <p>{contents.pro.cau_city[props.lang]}</p>
                 </header>
@@ -241,8 +270,9 @@ export default function History(props) {
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
                 </div>
                 <main className="grow mb-6 pb-6">
-                    <h3>{contents.pro.cau_title[props.lang]}</h3>
-                    <p>{contents.pro.cau_detail[props.lang]}</p>
+                    <h3 className="font-normal">{contents.pro.cau_title[props.lang]}</h3>
+                    <p>{contents.pro.cau_detail.p1[props.lang]}</p>
+                    <p>{contents.pro.cau_detail.p2[props.lang]}</p>
                     <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
                         <img className="h-10 mt-4 border-secondary border-2 bg-secondary" src={logo_cau} alt="CAU" />
                     </a>
@@ -250,14 +280,14 @@ export default function History(props) {
             </article>
             <article className="flex text-neutral">
                 <header className="flex-none w-36 lg:w-52 text-right">
-                    <h2>{contents.others[props.lang]}</h2>
+                    <h3 className="font-normal">{contents.others[props.lang]}</h3>
                 </header>
                 <div className="flex flex-col justify-items-center mx-6">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
                 </div>
                 <main className="grow mb-6 pb-6">
-                    <h3 className="mb-2">{contents.pro.other_title[props.lang]}</h3>
+                    <h3 className="mb-2 font-normal">{contents.pro.other_title[props.lang]}</h3>
                     <p>{contents.pro.occi[props.lang]}</p>
                     <p>{contents.pro.cloche[props.lang]}</p>
                 </main>
@@ -275,7 +305,7 @@ export default function History(props) {
             </h2>
             <article className="flex">
                 <header className="flex-none w-36 lg:w-52 text-right">
-                    <h2>{contents.etu.supagro[props.lang]}</h2>
+                    <h3 className="font-normal">{contents.etu.supagro[props.lang]}</h3>
                     <p>{contents.etu.supagro_date}</p>
                     <p>{contents.etu.supagro_city[props.lang]}</p>
                 </header>
@@ -284,7 +314,7 @@ export default function History(props) {
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
                 </div>
                 <main className="grow mb-6 pb-6">
-                    <h3 className="mb-2">{contents.etu.supagro_degree[props.lang]}</h3>
+                    <h3 className="mb-2 font-normal">{contents.etu.supagro_degree[props.lang]}</h3>
                     <p>{contents.etu.supagro_content[props.lang]}</p>
                     <div className="flex">
                         <a href="https://www.institut-agro-montpellier.fr/" target="_blank" rel="noopener noreferrer">
@@ -298,7 +328,7 @@ export default function History(props) {
             </article>
             <article className="flex">
                 <header className="flex-none w-36 lg:w-52 text-right">
-                    <h2>{contents.etu.cau[props.lang]}</h2>
+                    <h3 className="font-normal">{contents.etu.cau[props.lang]}</h3>
                     <p>{contents.etu.cau_date}</p>
                     <p>{contents.etu.cau_city[props.lang]}</p>
                 </header>
@@ -307,7 +337,7 @@ export default function History(props) {
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
                 </div>
                 <main className="grow mb-6 pb-6">
-                    <h3 className="mb-2">{contents.etu.supagro_degree[props.lang]}</h3>
+                    <h3 className="mb-2 font-normal">{contents.etu.supagro_degree[props.lang]}</h3>
                     <p>{contents.etu.cau_content[props.lang]}</p>
                     <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
                         <img className="h-10 mt-4 border-secondary border-2 bg-secondary" src={logo_cau} alt="CAU" />
@@ -316,19 +346,19 @@ export default function History(props) {
             </article>
             <article className="flex text-neutral">
                 <header className="flex-none w-36 lg:w-52 text-right">
-                    <h2>{contents.others[props.lang]}</h2>
+                    <h3 className="font-normal">{contents.others[props.lang]}</h3>
                 </header>
                 <div className="flex flex-col justify-items-center mx-6">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="grow w-0 border-l-2 border-primary border-dashed mx-4 mb-8"/>
                 </div>
                 <main className="grow mb-6 pb-6">
-                    <h3 className="mb-2">{contents.etu.reims[props.lang]}</h3>
+                    <h3 className="mb-2 font-normal">{contents.etu.reims[props.lang]}</h3>
                     <p>{contents.etu.reims_detail[props.lang]}</p>
                     <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
                         <img className="h-8 mb-8 border-secondary border-2 bg-secondary" src={logo_reims} alt="Université de Reims" />
                     </a>
-                    <h3 className="mb-2">{contents.etu.nursery[props.lang]}</h3>
+                    <h3 className="mb-2 font-normal">{contents.etu.nursery[props.lang]}</h3>
                     <p>{contents.etu.nursery_detail[props.lang]}</p>
                     <a href="https://institut-richemont.fr/" target="_blank" rel="noopener noreferrer">
                         <img className="h-8 border-secondary border-2 bg-secondary" src={logo_richemont} alt="Institut Richemont" />
