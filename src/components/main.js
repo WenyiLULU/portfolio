@@ -21,8 +21,27 @@ export default function Main(props) {
             "fr": "Une expérience d'automatisation de l'acquisition des données à l'aide de python m'a permis de découvrir les hautes performances des technologies informatiques et j'ai commencé à en apprendre davantage dans ce domaine. J'ai envie d'utiliser cette compétence pour participer à l'innovation et au développement du secteur de la vigne et du vin ou de tout autre secteur agricole.",
             "en": "An experience in automating data acquisition using python allowed me to discover the high performance of computer technologies and I started to learn more in this field. I want to use this skill to participate in the innovation and development of the vine and wine sector or any other agricultural sector.",
             "cn": "工作中一次利用python实现数据获取自动化的经历让我体验到信息技术的高效能，并开始在这一领域深入学习。我期望能够利用这一技能参与到葡萄与葡萄酒领域或是其它农业领域的创新与发展中去。"
-        }
-
+        },
+        "curious" : {
+            "fr": "Curieuse",
+            "en": "Curious",
+            "cn": "好奇心",
+        },
+        "creative" : {
+            "fr": "Créative",
+            "en": "Creative",
+            "cn": "创造力",
+        },
+        "dynamic" : {
+            "fr": "Dynamique",
+            "en": "Dynamic",
+            "cn": "活 力",
+        },
+        "versatile" : {
+            "fr": "Polyvalente",
+            "en": "Versatile",
+            "cn": "多才能",
+        },
     }
 
     return (
@@ -36,23 +55,22 @@ export default function Main(props) {
                         <h1 className="mb-5 text-4xl font-bold">
                             {contents.hello[props.lang]}
                         </h1>
-                        <h1 className="first-letter:pl-8 mb-2 pr-8 text-xl font-extralight text-justify col-span-full">
+                        <h1 className="first-letter:pl-8 mb-2 pr-8 text-xl font-medium text-justify col-span-full">
                             {contents.p1[props.lang]}
                         </h1>
-                        <p className="first-letter:pl-8 pr-8 text-m text-justify mb-2">
+                        <p className="first-letter:pl-8 pr-8 lg:text-xl text-justify mb-2">
                             {contents.p2[props.lang]}
                         </p>
-                        <p className="first-letter:pl-8 pr-8 text-m text-justify mb-2">
+                        <p className="first-letter:pl-8 pr-8 lg:text-xl text-justify mb-2">
                             {contents.p3[props.lang]}
                         </p>
-                        <ul className="flex justify-evenly text-secondary text-2xl mt-12">
-                            <li className="rounded-full bg-primary shadow px-4 py-1">Curieuse</li>
-                            <li className="rounded-full bg-primary shadow px-4 py-1">Créative</li>
-                            <li className="rounded-full bg-primary shadow px-4 py-1">Dynamique</li>
-                            <li className="rounded-full bg-primary shadow px-4 py-1">Polyvalente</li>
+                        <ul className="flex flex-wrap justify-evenly text-secondary text-center text-xl mt-12">
+                            <li className="rounded-full bg-primary shadow w-40 px-4 py-1 m-1">{contents.curious[props.lang]}</li>
+                            <li className="rounded-full bg-primary shadow w-40 px-4 py-1 m-1">{contents.creative[props.lang]}</li>
+                            <li className="rounded-full bg-primary shadow w-40 px-4 py-1 m-1">{contents.dynamic[props.lang]}</li>
+                            <li className="rounded-full bg-primary shadow w-40 px-4 py-1 m-1">{contents.versatile[props.lang]}</li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </section>
