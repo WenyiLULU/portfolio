@@ -64,14 +64,15 @@ export default function Main(props) {
                         <p className="first-letter:pl-8 pr-8 lg:text-xl text-justify mb-2">
                             {contents.p3[props.lang]}
                         </p>
-                        <ul className="flex flex-wrap justify-evenly text-secondary text-center text-xl mt-12">
-                            <li className="rounded-full bg-primary shadow w-40 px-4 py-1 m-1">{contents.curious[props.lang]}</li>
-                            <li className="rounded-full bg-primary shadow w-40 px-4 py-1 m-1">{contents.creative[props.lang]}</li>
-                            <li className="rounded-full bg-primary shadow w-40 px-4 py-1 m-1">{contents.dynamic[props.lang]}</li>
-                            <li className="rounded-full bg-primary shadow w-40 px-4 py-1 m-1">{contents.versatile[props.lang]}</li>
-                        </ul>
+
                     </div>
                 </div>
+                <ul className="flex flex-wrap justify-evenly text-secondary text-center text-xl mt-12">
+                    <li className="rounded-full bg-primary shadow w-40 px-4 py-1 m-1">{contents.curious[props.lang]}</li>
+                    <li className="rounded-full bg-primary shadow w-40 px-4 py-1 m-1">{contents.creative[props.lang]}</li>
+                    <li className="rounded-full bg-primary shadow w-40 px-4 py-1 m-1">{contents.dynamic[props.lang]}</li>
+                    <li className="rounded-full bg-primary shadow w-40 px-4 py-1 m-1">{contents.versatile[props.lang]}</li>
+                </ul>
             </div>
         </section>
     )
