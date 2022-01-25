@@ -206,7 +206,7 @@ export default function History(props) {
 
 
     return (
-        <section id="history" className="min-h-screen rounded-3xl my-8 mx-3 px-4 text-neutral-focus bg-secondary/75">
+        <section id="history" className="min-h-screen rounded-3xl my-8 mx-3 pb-12 px-6 lg:px-12 text-neutral-focus bg-secondary/75">
             <div className="grid justify-items-stretch mb-16">
                 <h1  className="justify-self-center text-center text-primary-focus uppercase text-5xl font-extralight col-span-full pt-16">
                     {contents.pro.history[props.lang]}
@@ -221,7 +221,7 @@ export default function History(props) {
                 <p className="ml-2">{contents.pro.experiences[props.lang]}</p>
             </h2>
             <article className="flex">
-                <header className="flex-none w-36 lg:w-52 text-right">
+                <header className="flex-none w-36 lg:w-60 text-right">
                     <h3 className="font-normal">{contents.pro.magister}</h3>
                     <p>{contents.pro.magister_date[props.lang]}</p>
                     <p>{contents.pro.magister_city[props.lang]}</p>
@@ -241,7 +241,7 @@ export default function History(props) {
                 </main>
             </article>
             <article className="flex">
-                <header className="flex-none w-36 lg:w-52 text-right">
+                <header className="flex-none w-36 lg:w-60 text-right">
                     <h3 className="font-normal">{contents.pro.remy}</h3>
                     <p>{contents.pro.remy_date[props.lang]}</p>
                     <p>{contents.pro.remy_city[props.lang]}</p>
@@ -260,7 +260,7 @@ export default function History(props) {
                 </main>
             </article>
             <article className="flex">
-                <header className="flex-none w-36 lg:w-52 text-right">
+                <header className="flex-none w-36 lg:w-60 text-right">
                     <h3 className="font-normal">{contents.pro.cau[props.lang]}</h3>
                     <p>{contents.pro.cau_date[props.lang]}</p>
                     <p>{contents.pro.cau_city[props.lang]}</p>
@@ -279,7 +279,7 @@ export default function History(props) {
                 </main>
             </article>
             <article className="flex text-neutral">
-                <header className="flex-none w-36 lg:w-52 text-right">
+                <header className="flex-none w-36 lg:w-60 text-right">
                     <h3 className="font-normal">{contents.others[props.lang]}</h3>
                 </header>
                 <div className="flex flex-col justify-items-center mx-6">
@@ -304,7 +304,7 @@ export default function History(props) {
                 <p className="ml-2">{contents.etu.formation[props.lang]}</p>
             </h2>
             <article className="flex">
-                <header className="flex-none w-36 lg:w-52 text-right">
+                <header className="flex-none w-36 lg:w-60 text-right">
                     <h3 className="font-normal">{contents.etu.supagro[props.lang]}</h3>
                     <p>{contents.etu.supagro_date}</p>
                     <p>{contents.etu.supagro_city[props.lang]}</p>
@@ -316,18 +316,18 @@ export default function History(props) {
                 <main className="grow mb-6 pb-6">
                     <h3 className="mb-2 font-normal">{contents.etu.supagro_degree[props.lang]}</h3>
                     <p>{contents.etu.supagro_content[props.lang]}</p>
-                    <div className="flex">
+                    <div className="flex flex-wrap">
                         <a href="https://www.institut-agro-montpellier.fr/" target="_blank" rel="noopener noreferrer">
-                            <img className="h-8 mt-4 border-secondary border-2" src={logo_supagro} alt="SupAgro" />
+                            <img className="h-8 mt-4 mr-4 border-secondary border-2" src={logo_supagro} alt="SupAgro" />
                         </a>
                         <a href="https://www.agro-bordeaux.fr/" target="_blank" rel="noopener noreferrer">
-                            <img className="h-8 m-4" src={logo_scienceagro} alt="Sciences Agro" />
+                            <img className="h-8 mt-4" src={logo_scienceagro} alt="Sciences Agro" />
                         </a>
                     </div>
                 </main>
             </article>
             <article className="flex">
-                <header className="flex-none w-36 lg:w-52 text-right">
+                <header className="flex-none w-36 lg:w-60 text-right">
                     <h3 className="font-normal">{contents.etu.cau[props.lang]}</h3>
                     <p>{contents.etu.cau_date}</p>
                     <p>{contents.etu.cau_city[props.lang]}</p>
@@ -345,7 +345,7 @@ export default function History(props) {
                 </main>
             </article>
             <article className="flex text-neutral">
-                <header className="flex-none w-36 lg:w-52 text-right">
+                <header className="flex-none w-36 lg:w-60 text-right">
                     <h3 className="font-normal">{contents.others[props.lang]}</h3>
                 </header>
                 <div className="flex flex-col justify-items-center mx-6">
