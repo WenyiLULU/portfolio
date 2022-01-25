@@ -6,7 +6,7 @@ export default function Footer() {
     const YEAR = new Date().getFullYear()
     return (
         <footer className="p-4 footer bg-primary-focus footer-center rounded-t-3xl grid grid-rows-2 gap-0 p-3">
-            <div className="grid grid-cols-3 place-items-center gap-0">
+            <div className="grid grid-cols-3 place-items-center gap-0 px-3">
                 <div>
                     <p className="text-secondary">Hosted by Vercel</p>
                     <p className="text-secondary">Coded with React using Tailwind and DaisyUI</p>

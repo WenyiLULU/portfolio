@@ -54,8 +54,8 @@ export default function Skills(props) {
         },
         "r_ex": {
             "fr": "Projet : Analyser des données des expérimentations (ex. analyse les résultats du analyse sensoriel)",
-            "en": "Project : Analyze data from experiments (e.g., analyze results of sensory analysis)",
-            "cn": "数据分析",
+            "en": "Project : Analyze data from experiments (e.g. analyze results of sensory analysis)",
+            "cn": "应用：分析实验数据（例如：分析感官品尝实验数据）",
         },
         "viti" : {
             "viti_title" :{
@@ -167,7 +167,7 @@ export default function Skills(props) {
                                     <h2 className="card-title">React</h2>
                                     <p className="text-base-content mt-2 ml-4">{contents.react[props.lang]}</p>
                                 </div>
-                                <p className="text-base-content text-opacity-75">{contents.r_ex[props.lang]}</p>
+                                <p className="text-base-content text-opacity-75">{contents.react_ex[props.lang]}</p>
                             </div>
                         </div>
                     </div>
@@ -183,7 +183,7 @@ export default function Skills(props) {
                                     <h2 className="card-title">R</h2>
                                     <p className="text-base-content mt-2 ml-4">{contents.r[props.lang]}</p>
                                 </div>
-                                <p className="text-base-content text-opacity-75">{contents.react_ex[props.lang]}</p>
+                                <p className="text-base-content text-opacity-75">{contents.r_ex[props.lang]}</p>
                             </div>
                         </div>
                     </div>

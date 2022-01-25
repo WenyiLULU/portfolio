@@ -206,7 +206,7 @@ export default function History(props) {
 
 
     return (
-        <section id="history" className="min-h-screen rounded-3xl my-8 mx-3 pb-12 px-6 lg:px-12 text-neutral-focus bg-secondary/75">
+        <section id="history" className="min-h-screen rounded-3xl my-8 mx-3 pb-12 px-4 lg:px-12 text-neutral-focus bg-secondary/75">
             <div className="grid justify-items-stretch mb-16">
                 <h1  className="justify-self-center text-center text-primary-focus uppercase text-5xl font-extralight col-span-full pt-16">
                     {contents.pro.history[props.lang]}
