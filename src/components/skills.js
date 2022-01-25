@@ -137,7 +137,7 @@ export default function Skills(props) {
                 </h1>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 place-content-evenly">
-                <div className="grid place-items-center content-start m-12">
+                <div className="grid place-items-center content-start m-12 text-neutral-focus">
                     <h3 className="text-neutral text-3xl mb-8">{contents.info[props.lang]}</h3>
                     <div className="card shadow-lg compact side px-4 min-w-full">
                         <div className="flex-row items-center space-x-8 card-body">
@@ -204,7 +204,7 @@ export default function Skills(props) {
                         </div>
                     </div>
                 </div>
-                <div className="grid place-items-center content-start m-12">
+                <div className="grid place-items-center content-start m-12 text-neutral-focus">
                     <h3 className="text-neutral text-3xl mb-8">{contents.viti.viti_title[props.lang]}</h3>
                     <div className="card shadow-lg compact side px-4 min-w-full">
                         <div className="flex-row items-center space-x-8 card-body">
@@ -236,7 +236,7 @@ export default function Skills(props) {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 ">
+                <div className="grid grid-cols-1 text-neutral-focus">
                     <h3 className="text-center text-neutral text-3xl mt-12 mb-8">Languages</h3>
                     <div className="flex">
                         <div className="flex-none justify-items-end grid grid-rows-3 mx-4">
@@ -251,7 +251,7 @@ export default function Skills(props) {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="text-neutral-focus">
                     <h3 className="text-center text-neutral text-3xl mt-12 mb-8">{contents.transport[props.lang]}</h3>
                     <div className="grid grid-cols-3">
                         <img className="justify-self-end mr-8" src="https://img.icons8.com/windows/32/000000/sedan.png" alt="car"/>
