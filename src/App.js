@@ -1,25 +1,39 @@
 import './App.css';
+import {useState} from "react";
+
 import Header from './components/header';
 import Footer from './components/footer';
 import Main from './components/main';
 import History from "./components/history";
 import Hobbies from "./components/hobbies";
-import {useState} from "react";
 import Skills from "./components/skills";
 import Cookies from 'universal-cookie';
 
 const LANGS = ["en", "fr", "cn"];
+export let cookie = new Cookies();
 
-function App() {
-    let cookie = new Cookies();
+export function getDefaultLang() {
     let cookieLang = cookie.get('lang');
 
-    let defaultLang = "en";
-    if (cookieLang != null && LANGS.includes(cookieLang)) {
-        defaultLang = cookieLang;
+    if (LANGS.includes(cookieLang)) {
+        return cookieLang;
+    } else {
+        return "en";
     }
+}
 
-    const [lang, setLang] = useState(defaultLang);
+function App() {
+    //let cookieLang = cookie.get('lang');
+
+    
+    const [lang, setLang] = useState(getDefaultLang());
+
+    // let defaultLang = "en";
+    // if (cookieLang != null && LANGS.includes(cookieLang)) {
+    //     defaultLang = cookieLang;
+    // }
+
+    // const [lang, setLang] = useState(defaultLang);
 
     function handleLanguage (langValue) {
         cookie.set("lang", langValue, {
