@@ -5,6 +5,7 @@ import logo_reims from "../images/logo_reims.png"
 import logo_richemont from "../images/logo_richemont.jpg"
 import logo_magister from  "../images/logo-magister.png"
 import logo_remy from "../images/Remy-Martin-logo.png"
+import logo_ironhack from "../images/logo_ironhack.png"
 
 export default function History(props) {
     const contents = {
@@ -101,12 +102,43 @@ export default function History(props) {
                 "en": "Oenologist Assistant",
                 "cn": "酿酒助理",
             },
+            "trad" : {
+                "fr": "Traductrice Français-Chinois",
+                "en": "Tanslator French-Chinese",
+                "cn": "翻译 法-中",
+            },
+            "trad_detail" : {
+                "fr": "2021 - 2022 : 《De l'OEnologie à la Viticulture》",
+                "en": "2021 - 2022 : 《From Oenology to Viticulture》",
+                "cn": "2021 - 2022 : 《从葡萄酒酿造到葡萄栽培》",
+            }
         },
         "etu" : {
             "formation": {
                 "fr": "Formation",
                 "en": "Education",
                 "cn": "教育经历",
+            },
+            "ironhack": {
+                "fr": "Ironhack",
+                "en": "Ironhack",
+                "cn": "Ironhack",
+            },
+            "ironhack_date": "2022",
+            "ironhack_city": {
+                "fr": "Paris (France)",
+                "en": "Paris (France)",
+                "cn": "巴黎 （法国）",
+            },
+            "ironhack_degree": {
+                "fr": "Full-Stack Web Développeur",
+                "en": "Full-Stack Web Developer",
+                "cn": "全栈网络开发",
+            },
+            "ironhack_content": {
+                "fr": "Technologies Front-end (HTML | CSS | JavaScript(ES6) | React) et Back-end (Express Js | Node Js | MongoDB | Axios)",
+                "en": "Front end technologies(HTML | CSS | JavaScript(ES6) | React) and Back end technologies(Express Js | Node Js | MongoDB | Axios)",
+                "cn": "前端技术(HTML | CSS | JavaScript(ES6) | React) 和后端技术 (Express Js | Node Js | MongoDB | Axios)",
             },
             "supagro": {
                 "fr": "Montpellier SupAgro et Bordeaux Science Agro",
@@ -141,12 +173,12 @@ export default function History(props) {
                 "cn": "北京 （中国）",
             },
             "cau_degree": {
-                "fr": "Licence de Viticulture et D’œnologie (bac+4) ",
+                "fr": "Licence de Viticulture et D'œnologie (bac+4) ",
                 "en": "Bachelor of Viticulture and Oenology",
                 "cn": "葡萄与葡萄酒工程学士学位",
             },
             "cau_content": {
-                "fr": "Étude des connaissances agroalimentaires, étude de la viticulture et de l’œnologie",
+                "fr": "Étude des connaissances agroalimentaires, étude de la viticulture et de l'œnologie",
                 "en": "Study of food industry knowledge, study of viticulture and oenology.",
                 "cn": "主修食品科学技术以及葡萄栽培与酿造相关学科",
             },
@@ -180,14 +212,14 @@ export default function History(props) {
 
 
     return (
-        <section id="history" className="min-h-screen rounded-3xl my-8 mx-3 px-4 bg-secondary/75">
-            <div className="grid justify-items-stretch mb-16">
-                <h1  className="justify-self-center text-center text-primary-focus uppercase text-5xl font-extralight col-span-full pt-16">
+        <section id="history" className="min-h-screen px-4 mx-3 my-8 font-normal rounded-3xl bg-secondary/40">
+            <div className="grid mb-16 justify-items-stretch">
+                <h1  className="pt-16 text-5xl font-light text-center uppercase justify-self-center text-primary-focus col-span-full">
                     {contents.pro.history[props.lang]}
                 </h1>
             </div>
-            <h2 className="flex text-neutral text-3xl border-b-2 m-8">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 m-2" fill="none" viewBox="0 0 24 24"
+            <h2 className="flex m-8 text-3xl border-b-2 text-neutral-focus">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 m-2" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -195,75 +227,77 @@ export default function History(props) {
                 <p className="ml-2">{contents.pro.experiences[props.lang]}</p>
             </h2>
             <article className="flex">
-                <header className="flex-none w-36 lg:w-52 text-right">
+                <header className="flex-none text-right w-36 lg:w-52">
                     <h2>{contents.pro.magister}</h2>
                     <p>{contents.pro.magister_date[props.lang]}</p>
                     <p>{contents.pro.magister_city[props.lang]}</p>
                 </header>
-                <div className="flex flex-col justify-items-center mx-6">
+                <div className="flex flex-col mx-6 justify-items-center">
                     <span className="flex-none w-2.5 h-2.5  bg-primary-focus rounded-3xl m-3" />
-                    <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
+                    <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="grow mb-6 pb-6">
+                <main className="pb-6 mb-6 grow">
                     <h3>{contents.pro.magister_title[props.lang]}</h3>
                     <p>{contents.pro.magister_detail[props.lang]}</p>
                     <a className="w-10" href="https://www.reseau-magister.fr/" target="_blank" rel="noopener noreferrer">
-                        <img className="h-8 mt-4 border-secondary bg-black" src={logo_magister} alt="GIE Magister" />
+                        <img className="h-8 mt-4 bg-black border-secondary" src={logo_magister} alt="GIE Magister" />
                     </a>
                 </main>
             </article>
             <article className="flex">
-                <header className="flex-none w-36 lg:w-52 text-right">
+                <header className="flex-none text-right w-36 lg:w-52">
                     <h2>{contents.pro.remy}</h2>
                     <p>{contents.pro.remy_date[props.lang]}</p>
                     <p>{contents.pro.remy_city[props.lang]}</p>
                 </header>
-                <div className="flex flex-col justify-items-center mx-6">
+                <div className="flex flex-col mx-6 justify-items-center">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
-                    <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
+                    <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="grow mb-6 pb-6">
+                <main className="pb-6 mb-6 grow">
                     <h3>{contents.pro.remy_title[props.lang]}</h3>
                     <p>{contents.pro.remy_detail[props.lang]}</p>
                     <a href="https://www.remymartin.com/" target="_blank" rel="noopener noreferrer">
-                        <img className="h-9 mt-4 bg-white" src={logo_remy} alt="Rémy-Martin" />
+                        <img className="mt-4 bg-white h-9" src={logo_remy} alt="Rémy-Martin" />
                     </a>
                 </main>
             </article>
             <article className="flex">
-                <header className="flex-none w-36 lg:w-52 text-right">
+                <header className="flex-none text-right w-36 lg:w-52">
                     <h2>{contents.pro.cau[props.lang]}</h2>
                     <p>{contents.pro.cau_date[props.lang]}</p>
                     <p>{contents.pro.cau_city[props.lang]}</p>
                 </header>
-                <div className="flex flex-col justify-items-center mx-6">
+                <div className="flex flex-col mx-6 justify-items-center">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
-                    <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
+                    <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="grow mb-6 pb-6">
+                <main className="pb-6 mb-6 grow">
                     <h3>{contents.pro.cau_title[props.lang]}</h3>
                     <p>{contents.pro.cau_detail[props.lang]}</p>
                     <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
-                        <img className="h-10 mt-4 border-secondary border-2 bg-secondary" src={logo_cau} alt="CAU" />
+                        <img className="h-10 mt-4 border-2 border-secondary bg-secondary" src={logo_cau} alt="CAU" />
                     </a>
                 </main>
             </article>
-            <article className="flex text-neutral">
-                <header className="flex-none w-36 lg:w-52 text-right">
+            <article className="flex text-neutral-focus">
+                <header className="flex-none text-right w-36 lg:w-52">
                     <h2>{contents.others[props.lang]}</h2>
                 </header>
-                <div className="flex flex-col justify-items-center mx-6">
+                <div className="flex flex-col mx-6 justify-items-center">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
-                    <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
+                    <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="grow mb-6 pb-6">
+                <main className="pb-6 mb-6 grow">
                     <h3 className="mb-2">{contents.pro.other_title[props.lang]}</h3>
                     <p>{contents.pro.occi[props.lang]}</p>
                     <p>{contents.pro.cloche[props.lang]}</p>
+                    <h3 className="mt-2 mb-2">{contents.pro.trad[props.lang]}</h3>
+                    <p>{contents.pro.trad_detail[props.lang]}</p>
                 </main>
             </article>
-            <h2 className="flex text-neutral text-3xl border-b-2 m-8">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 m-2" fill="none" viewBox="0 0 24 24"
+            <h2 className="flex m-8 text-3xl border-b-2 text-neutral-focus">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 m-2" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
                     <path d="M12 14l9-5-9-5-9 5 9 5z"/>
                     <path
@@ -274,21 +308,41 @@ export default function History(props) {
                 <p className="ml-2">{contents.etu.formation[props.lang]}</p>
             </h2>
             <article className="flex">
-                <header className="flex-none w-36 lg:w-52 text-right">
+                <header className="flex-none text-right w-36 lg:w-52">
+                    <h2>{contents.etu.ironhack[props.lang]}</h2>
+                    <p>{contents.etu.ironhack_date}</p>
+                    <p>{contents.etu.ironhack_city[props.lang]}</p>
+                </header>
+                <div className="flex flex-col mx-6 justify-items-center">
+                    <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
+                    <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
+                </div>
+                <main className="pb-6 mb-6 grow">
+                    <h3 className="mb-2">{contents.etu.ironhack_degree[props.lang]}</h3>
+                    <p>{contents.etu.ironhack_content[props.lang]}</p>
+                    <div className="flex">
+                        <a href="https://www.ironhack.com/fr/developpement-web" target="_blank" rel="noopener noreferrer">
+                            <img className="h-8 mt-4 border-2 border-secondary" src={logo_ironhack} alt="Ironhack" />
+                        </a>
+                    </div>
+                </main>
+            </article>
+            <article className="flex">
+                <header className="flex-none text-right w-36 lg:w-52">
                     <h2>{contents.etu.supagro[props.lang]}</h2>
                     <p>{contents.etu.supagro_date}</p>
                     <p>{contents.etu.supagro_city[props.lang]}</p>
                 </header>
-                <div className="flex flex-col justify-items-center mx-6">
+                <div className="flex flex-col mx-6 justify-items-center">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
-                    <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
+                    <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="grow mb-6 pb-6">
+                <main className="pb-6 mb-6 grow">
                     <h3 className="mb-2">{contents.etu.supagro_degree[props.lang]}</h3>
                     <p>{contents.etu.supagro_content[props.lang]}</p>
                     <div className="flex">
                         <a href="https://www.institut-agro-montpellier.fr/" target="_blank" rel="noopener noreferrer">
-                            <img className="h-8 mt-4 border-secondary border-2" src={logo_supagro} alt="SupAgro" />
+                            <img className="h-8 mt-4 border-2 border-secondary" src={logo_supagro} alt="SupAgro" />
                         </a>
                         <a href="https://www.agro-bordeaux.fr/" target="_blank" rel="noopener noreferrer">
                             <img className="h-8 m-4" src={logo_scienceagro} alt="Sciences Agro" />
@@ -297,41 +351,41 @@ export default function History(props) {
                 </main>
             </article>
             <article className="flex">
-                <header className="flex-none w-36 lg:w-52 text-right">
+                <header className="flex-none text-right w-36 lg:w-52">
                     <h2>{contents.etu.cau[props.lang]}</h2>
                     <p>{contents.etu.cau_date}</p>
                     <p>{contents.etu.cau_city[props.lang]}</p>
                 </header>
-                <div className="flex flex-col justify-items-center mx-6">
+                <div className="flex flex-col mx-6 justify-items-center">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
-                    <span className="grow w-0 border-l-2 border-primary border-dashed mx-4"/>
+                    <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="grow mb-6 pb-6">
+                <main className="pb-6 mb-6 grow">
                     <h3 className="mb-2">{contents.etu.supagro_degree[props.lang]}</h3>
                     <p>{contents.etu.cau_content[props.lang]}</p>
                     <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
-                        <img className="h-10 mt-4 border-secondary border-2 bg-secondary" src={logo_cau} alt="CAU" />
+                        <img className="h-10 mt-4 border-2 border-secondary bg-secondary" src={logo_cau} alt="CAU" />
                     </a>
                 </main>
             </article>
-            <article className="flex text-neutral">
-                <header className="flex-none w-36 lg:w-52 text-right">
+            <article className="flex text-neutral-focus">
+                <header className="flex-none text-right w-36 lg:w-52">
                     <h2>{contents.others[props.lang]}</h2>
                 </header>
-                <div className="flex flex-col justify-items-center mx-6">
+                <div className="flex flex-col mx-6 justify-items-center">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
-                    <span className="grow w-0 border-l-2 border-primary border-dashed mx-4 mb-8"/>
+                    <span className="w-0 mx-4 mb-8 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="grow mb-6 pb-6">
+                <main className="pb-6 mb-6 grow">
                     <h3 className="mb-2">{contents.etu.reims[props.lang]}</h3>
                     <p>{contents.etu.reims_detail[props.lang]}</p>
                     <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
-                        <img className="h-8 mb-8 border-secondary border-2 bg-secondary" src={logo_reims} alt="Université de Reims" />
+                        <img className="h-8 mb-8 border-2 border-secondary bg-secondary" src={logo_reims} alt="Université de Reims" />
                     </a>
                     <h3 className="mb-2">{contents.etu.nursery[props.lang]}</h3>
                     <p>{contents.etu.nursery_detail[props.lang]}</p>
                     <a href="https://institut-richemont.fr/" target="_blank" rel="noopener noreferrer">
-                        <img className="h-8 border-secondary border-2 bg-secondary" src={logo_richemont} alt="Institut Richemont" />
+                        <img className="h-8 border-2 border-secondary bg-secondary" src={logo_richemont} alt="Institut Richemont" />
                     </a>
                 </main>
             </article>
