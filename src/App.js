@@ -44,7 +44,7 @@ function App() {
     }
 
     return (
-        <div className="relative bg-gradient-to-b from-primary-focus to-secondary min-h-screen flex flex-col font-thin">
+        <div className="relative flex flex-col min-h-screen font-thin bg-gradient-to-b from-primary-focus to-secondary">
             <Header onSelectLanguage={handleLanguage} lang={lang}/>
             <main className="w-full grow">
                 <Main lang={lang} />
@@ -55,13 +55,11 @@ function App() {
                 <div className="md:px-8 lg:px-[10%] md:py-8 lg:py-16">
                     <Skills lang={lang} />
                 </div>
-                <div className="md:px-8 lg:px-[10%] md:py-8 lg:py-16">
-                    <Hobbies />
-                </div>
+                
 
             </main>
-            <a href="#me" className="btn btn-circle glass btn-sm fixed bottom-4 right-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24"
+            <a href="#me" className="fixed btn btn-circle glass btn-sm bottom-4 right-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 11l7-7 7 7M5 19l7-7 7 7"/>
                 </svg>

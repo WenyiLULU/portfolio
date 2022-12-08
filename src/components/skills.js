@@ -1,7 +1,16 @@
+import icon_js from "../images/logo_js.png";
+import icon_ts from "../images/logo_ts.png";
+import icon_mongo from "../images/logo_mongo.png";
+import icon_git from "../images/logo_git.png";
+import icon_github from "../images/logo_github.png";
 import icon_python from "../images/icon_python.png";
 import icon_react from "../images/icon_react.png";
+import icon_next from "../images/logo_next.png";
 import icon_qgis from "../images/icon_qgis.png"
 import icon_r from "../images/icon_r.png"
+import flag_cn from "../images/flag_cn.png"
+import flag_en from "../images/flag_en.png"
+import flag_fr from "../images/flag_fr.png"
 
 export default function Skills(props) {
     const contents = {
@@ -43,31 +52,41 @@ export default function Skills(props) {
     }
 
     return (
-        <section id="skills" className="min-h-screen rounded-3xl my-8 mx-3 px-4 bg-secondary/75">
-            <div className="grid justify-items-stretch mb-16">
-                <h1  className="justify-self-center text-center text-primary-focus uppercase text-5xl font-extralight col-span-full pt-16">
+        <section id="skills" className="min-h-screen px-4 mx-3 my-8 font-normal rounded-3xl bg-secondary/40">
+            <div className="grid mb-8 justify-items-stretch">
+                <h1  className="pt-16 text-5xl font-light text-center uppercase justify-self-center text-primary-focus col-span-full">
                     {contents.skills[props.lang]}
                 </h1>
             </div>
-            <div className="flex flex-wrap justify-evenly">
-                <div className="grid grid-cols-2 text-center place-items-center place-content-evenly m-12">
-                    <h3 className="col-span-full text-neutral text-3xl mb-8">{contents.info[props.lang]}</h3>
+            <div className="flex flex-col justify-evenly">
+                <div className="grid grid-cols-3 m-8 text-center place-items-center place-content-evenly">
+                    <h3 className="mb-8 text-3xl col-span-full text-neutral-focus">{contents.info[props.lang]}</h3>
+                    <img className="w-20 my-4" src={icon_js} alt="JS" />
+                    <img className="w-20 my-4" src={icon_ts} alt="TS" />
                     <img className="w-20 my-4" src={icon_python} alt="Python" />
-                    <img className="w-20 my-4" src={icon_react} alt="Python" />
-                    <img className="w-20 my-4" src={icon_qgis} alt="Python" />
-                    <img className="w-20 my-4" src={icon_r} alt="Python" />
+                    <img className="w-20 my-4" src={icon_mongo} alt="Mongo" />                    
+                    <img className="w-20 my-4" src={icon_react} alt="React" />
+                    <img className="w-20 my-4" src={icon_next} alt="Next" />
+                    <img className="w-20 my-4" src={icon_git} alt="git" />
+                    <img className="w-20 my-4" src={icon_github} alt="github" />
+                    <img className="w-20 my-4" src={icon_r} alt="R" />
                 </div>
-                <div className=" mb-6 pb-6 m-12">
-                    <h3 className="text-center text-neutral text-3xl mb-8">{contents.language[props.lang]}</h3>
-                    <div className="grid grid-cols-5 gap-4">
-                        <p className="justify-self-end">{contents.english[props.lang]}</p>
-                        <progress className="col-span-4 justify-self-start progress progress-primary bg-secondary-focus mt-3" value="70" max="100"></progress>
-                        <p className="justify-self-end h-4">{contents.french[props.lang]}</p>
-                        <progress className="col-span-4 justify-self-start progress progress-primary bg-secondary-focus mt-3" value="90" max="100"></progress>
-                        <p className="justify-self-end h-4">{contents.chinese[props.lang]}</p>
-                        <progress className="col-span-4 justify-self-start progress progress-primary bg-secondary-focus mt-3" value="100" max="100"></progress>
+                <div className="pb-6 m-12 mb-6 ">
+                    <h3 className="mb-8 text-3xl text-center text-neutral-focus">{contents.language[props.lang]}</h3>
+                    <div className="flex flex-wrap justify-evenly">
+                        <div>
+                            <img className="w-40 m-2" src={flag_cn} alt="Chinese"/>
+                            <p className="text-center text-neutral-focus">{contents.chinese[props.lang]}</p>
+                        </div>
+                        <div>
+                            <img className="w-40 m-2" src={flag_fr} alt="French"/>
+                            <p className="text-center text-neutral-focus">{contents.french[props.lang]}</p>
+                        </div><div>
+                            <img className="w-40 m-2" src={flag_en} alt="English"/>
+                            <p className="text-center text-neutral-focus">{contents.english[props.lang]}</p>
+                        </div>
+                        
                     </div>
-                    <h3 className="text-center text-neutral text-3xl my-12">{contents.language[props.lang]}</h3>
                 </div>
             </div>
 
