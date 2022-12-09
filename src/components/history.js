@@ -212,13 +212,13 @@ export default function History(props) {
 
 
     return (
-        <section id="history" className="min-h-screen px-4 mx-3 my-8 font-normal rounded-3xl bg-secondary/40">
+        <section id="history" className="min-h-screen px-4 mx-3 my-8 text-sm font-normal rounded-3xl bg-secondary/40 md:text-base">
             <div className="grid mb-16 justify-items-stretch">
-                <h1  className="pt-16 text-5xl font-light text-center uppercase justify-self-center text-primary-focus col-span-full">
+                <h1  className="pt-16 text-4xl font-light text-center uppercase justify-self-center text-primary-focus col-span-full sm:text-5xl">
                     {contents.pro.history[props.lang]}
                 </h1>
             </div>
-            <h2 className="flex m-8 text-3xl border-b-2 text-neutral-focus">
+            <h2 className="flex m-8 text-2xl border-b-2 text-neutral-focus sm:text-3xl">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 m-2" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -226,17 +226,17 @@ export default function History(props) {
                 </svg>
                 <p className="ml-2">{contents.pro.experiences[props.lang]}</p>
             </h2>
-            <article className="flex">
-                <header className="flex-none text-right w-36 lg:w-52">
+            <article className="grid grid-cols-9 gap-3">
+                <header className="col-span-2 text-right">
                     <h2>{contents.pro.magister}</h2>
                     <p>{contents.pro.magister_date[props.lang]}</p>
                     <p>{contents.pro.magister_city[props.lang]}</p>
                 </header>
-                <div className="flex flex-col mx-6 justify-items-center">
+                <div className="flex flex-col place-items-center">
                     <span className="flex-none w-2.5 h-2.5  bg-primary-focus rounded-3xl m-3" />
                     <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="pb-6 mb-6 grow">
+                <main className="col-span-6 pb-6 mb-6">
                     <h3>{contents.pro.magister_title[props.lang]}</h3>
                     <p>{contents.pro.magister_detail[props.lang]}</p>
                     <a className="w-10" href="https://www.reseau-magister.fr/" target="_blank" rel="noopener noreferrer">
@@ -244,17 +244,17 @@ export default function History(props) {
                     </a>
                 </main>
             </article>
-            <article className="flex">
-                <header className="flex-none text-right w-36 lg:w-52">
+            <article className="grid grid-cols-9 gap-3">
+                <header className="col-span-2 text-right">
                     <h2>{contents.pro.remy}</h2>
                     <p>{contents.pro.remy_date[props.lang]}</p>
                     <p>{contents.pro.remy_city[props.lang]}</p>
                 </header>
-                <div className="flex flex-col mx-6 justify-items-center">
+                <div className="flex flex-col place-items-center">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="pb-6 mb-6 grow">
+                <main className="col-span-6 pb-6 mb-6">
                     <h3>{contents.pro.remy_title[props.lang]}</h3>
                     <p>{contents.pro.remy_detail[props.lang]}</p>
                     <a href="https://www.remymartin.com/" target="_blank" rel="noopener noreferrer">
@@ -262,17 +262,17 @@ export default function History(props) {
                     </a>
                 </main>
             </article>
-            <article className="flex">
-                <header className="flex-none text-right w-36 lg:w-52">
+            <article className="grid grid-cols-9 gap-3">
+                <header className="col-span-2 text-right">
                     <h2>{contents.pro.cau[props.lang]}</h2>
                     <p>{contents.pro.cau_date[props.lang]}</p>
                     <p>{contents.pro.cau_city[props.lang]}</p>
                 </header>
-                <div className="flex flex-col mx-6 justify-items-center">
+                <div className="flex flex-col place-items-center">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="pb-6 mb-6 grow">
+                <main className="col-span-6 pb-6 mb-6">
                     <h3>{contents.pro.cau_title[props.lang]}</h3>
                     <p>{contents.pro.cau_detail[props.lang]}</p>
                     <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
@@ -280,15 +280,15 @@ export default function History(props) {
                     </a>
                 </main>
             </article>
-            <article className="flex text-neutral-focus">
-                <header className="flex-none text-right w-36 lg:w-52">
+            <article className="grid grid-cols-9 gap-3 text-neutral-focus">
+                <header className="col-span-2 text-right">
                     <h2>{contents.others[props.lang]}</h2>
                 </header>
-                <div className="flex flex-col mx-6 justify-items-center">
+                <div className="flex flex-col place-items-center">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="pb-6 mb-6 grow">
+                <main className="col-span-6 pb-6 mb-6">
                     <h3 className="mb-2">{contents.pro.other_title[props.lang]}</h3>
                     <p>{contents.pro.occi[props.lang]}</p>
                     <p>{contents.pro.cloche[props.lang]}</p>
@@ -296,7 +296,7 @@ export default function History(props) {
                     <p>{contents.pro.trad_detail[props.lang]}</p>
                 </main>
             </article>
-            <h2 className="flex m-8 text-3xl border-b-2 text-neutral-focus">
+            <h2 className="flex m-8 text-2xl border-b-2 text-neutral-focus sm:text-3xl">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 m-2" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
                     <path d="M12 14l9-5-9-5-9 5 9 5z"/>
@@ -307,17 +307,17 @@ export default function History(props) {
                 </svg>
                 <p className="ml-2">{contents.etu.formation[props.lang]}</p>
             </h2>
-            <article className="flex">
-                <header className="flex-none text-right w-36 lg:w-52">
+            <article className="grid grid-cols-9 gap-3">
+                <header className="col-span-2 text-right">
                     <h2>{contents.etu.ironhack[props.lang]}</h2>
                     <p>{contents.etu.ironhack_date}</p>
                     <p>{contents.etu.ironhack_city[props.lang]}</p>
                 </header>
-                <div className="flex flex-col mx-6 justify-items-center">
+                <div className="flex flex-col place-items-center">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="pb-6 mb-6 grow">
+                <main className="col-span-6 pb-6 mb-6">
                     <h3 className="mb-2">{contents.etu.ironhack_degree[props.lang]}</h3>
                     <p>{contents.etu.ironhack_content[props.lang]}</p>
                     <div className="flex">
@@ -327,17 +327,17 @@ export default function History(props) {
                     </div>
                 </main>
             </article>
-            <article className="flex">
-                <header className="flex-none text-right w-36 lg:w-52">
+            <article className="grid grid-cols-9 gap-3">
+                <header className="col-span-2 text-right">
                     <h2>{contents.etu.supagro[props.lang]}</h2>
                     <p>{contents.etu.supagro_date}</p>
                     <p>{contents.etu.supagro_city[props.lang]}</p>
                 </header>
-                <div className="flex flex-col mx-6 justify-items-center">
+                <div className="flex flex-col place-items-center">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="pb-6 mb-6 grow">
+                <main className="col-span-6 pb-6 mb-6">
                     <h3 className="mb-2">{contents.etu.supagro_degree[props.lang]}</h3>
                     <p>{contents.etu.supagro_content[props.lang]}</p>
                     <div className="flex">
@@ -350,17 +350,17 @@ export default function History(props) {
                     </div>
                 </main>
             </article>
-            <article className="flex">
-                <header className="flex-none text-right w-36 lg:w-52">
+            <article className="grid grid-cols-9 gap-3">
+                <header className="col-span-2 text-right">
                     <h2>{contents.etu.cau[props.lang]}</h2>
                     <p>{contents.etu.cau_date}</p>
                     <p>{contents.etu.cau_city[props.lang]}</p>
                 </header>
-                <div className="flex flex-col mx-6 justify-items-center">
+                <div className="flex flex-col place-items-center">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="w-0 mx-4 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="pb-6 mb-6 grow">
+                <main className="col-span-6 pb-6 mb-6">
                     <h3 className="mb-2">{contents.etu.supagro_degree[props.lang]}</h3>
                     <p>{contents.etu.cau_content[props.lang]}</p>
                     <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
@@ -368,15 +368,15 @@ export default function History(props) {
                     </a>
                 </main>
             </article>
-            <article className="flex text-neutral-focus">
-                <header className="flex-none text-right w-36 lg:w-52">
+            <article className="grid grid-cols-9 gap-3 text-neutral-focus">
+                <header className="col-span-2 text-right">
                     <h2>{contents.others[props.lang]}</h2>
                 </header>
-                <div className="flex flex-col mx-6 justify-items-center">
+                <div className="flex flex-col place-items-center">
                     <span className="flex-none w-2.5 h-2.5 bg-primary-focus rounded-3xl m-3" />
                     <span className="w-0 mx-4 mb-8 border-l-2 border-dashed grow border-primary"/>
                 </div>
-                <main className="pb-6 mb-6 grow">
+                <main className="col-span-6 pb-6 mb-6">
                     <h3 className="mb-2">{contents.etu.reims[props.lang]}</h3>
                     <p>{contents.etu.reims_detail[props.lang]}</p>
                     <a href="https://www.cau.edu.cn/" target="_blank" rel="noopener noreferrer">
