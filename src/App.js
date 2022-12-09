@@ -46,18 +46,16 @@ function App() {
     return (
         <div className="relative flex flex-col min-h-screen font-thin bg-gradient-to-b from-primary-focus to-secondary">
             <Header onSelectLanguage={handleLanguage} lang={lang}/>
-            <main className="w-full grow">
-                <Main lang={lang} />
+            
+            <Main lang={lang} />
 
-                <div className="md:px-8 lg:px-[10%] md:py-8 lg:py-16">
-                    <History lang={lang} />
-                </div>
-                <div className="md:px-8 lg:px-[10%] md:py-8 lg:py-16">
-                    <Skills lang={lang} />
-                </div>
-                
-
-            </main>
+            <div className="md:px-8 lg:px-[10%] md:py-8 lg:py-16">
+                <History lang={lang} />
+            </div>
+            <div className="md:px-8 lg:px-[10%] md:py-8 lg:py-16">
+                <Skills lang={lang} />
+            </div>
+            
             <a href="#me" className="fixed btn btn-circle glass btn-sm bottom-4 right-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
