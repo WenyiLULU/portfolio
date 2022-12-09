@@ -17,7 +17,7 @@ export default function Header(props) {
                 </span>
             </div>
             <div className="hidden px-2 mx-2 navbar-center md:flex">
-                <div className="flex items-stretch md:space-x-6 lg:space-x-12">
+                <div className="flex items-stretch md:space-x-2 lg:space-x-8">
                     <a href="#me" className="border-white btn btn-ghost btn-sm rounded-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
@@ -52,7 +52,7 @@ export default function Header(props) {
                         </svg>
                         {HeaderContents.hobbies[props.lang]}
                     </a>
-                    <a href="#me" className="border-white btn btn-ghost btn-sm rounded-btn">
+                    <a href="#footer" className="border-white btn btn-ghost btn-sm rounded-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -113,7 +113,7 @@ export default function Header(props) {
                                     </a>
                                 </li>
                                 <li className="hover-bordered">
-                                    <a href="#me">
+                                    <a href="#skills">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2" fill="none"
                                              viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -135,7 +135,7 @@ export default function Header(props) {
                                     </a>
                                 </li>
                                 <li className="hover-bordered">
-                                    <a href="#me">
+                                    <a href="#footer">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24"
                                              stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"

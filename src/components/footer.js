@@ -5,7 +5,7 @@ import icon_mail from "../images/icon_mail.png"
 
 export default function Footer() {
     return (
-        <footer className="p-4 font-light footer bg-neutral text-secondary footer-center">
+        <footer id="footer" className="p-4 font-light footer bg-neutral text-secondary footer-center">
             <div className="grid grid-cols-3 justify-items-center">
                 <div >
                     <p className="text-secondary">Hosted by Vercel</p>
